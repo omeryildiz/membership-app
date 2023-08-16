@@ -1,0 +1,87 @@
+2012-08-14 14:43:13 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CurrencyAccountsCash.id' in 'field list'
+#0 /var/www/cakephp/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/cakephp/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Currenc...', Array)
+#2 /var/www/cakephp/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Currenc...', Array, Array)
+#3 /var/www/cakephp/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Currenc...', false)
+#4 /var/www/cakephp/lib/Cake/Model/Model.php(2631): DboSource->read(Object(AppModel), Array)
+#5 /var/www/cakephp/lib/Cake/Model/Model.php(2460): Model->find('all', Array)
+#6 /var/www/cakephp/lib/Cake/Model/Model.php(2362): Model->_deleteLinks('2')
+#7 /var/www/cakephp/app/Controller/CurrencyAccountsController.php(98): Model->delete()
+#8 [internal function]: CurrencyAccountsController->delete('2')
+#9 /var/www/cakephp/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CurrencyAccountsController), Array)
+#10 /var/www/cakephp/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CurrencyAccountsController), Object(CakeRequest), Object(CakeResponse))
+#12 /var/www/cakephp/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-08-14 14:51:11 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/cakephp/app/Controller/InvoicesController.php, line 51]
+2012-08-14 14:51:11 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /var/www/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cakeph...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cakeph...', 51, Array)
+#2 /var/www/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cakeph...', 51, Array)
+#3 /var/www/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-08-14 14:54:03 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/cakephp/app/Controller/InvoicesController.php, line 51]
+2012-08-14 14:54:03 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /var/www/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cakeph...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cakeph...', 51, Array)
+#2 /var/www/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cakeph...', 51, Array)
+#3 /var/www/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-08-14 16:01:06 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/cakephp/app/Controller/CurrencyAccountsController.php, line 52]
+2012-08-14 16:01:06 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /var/www/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 52)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 52, Array)
+#2 /var/www/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 52, Array)
+#3 /var/www/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-08-14 16:01:09 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/cakephp/app/Controller/CurrencyAccountsController.php, line 52]
+2012-08-14 16:01:09 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /var/www/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 52)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 52, Array)
+#2 /var/www/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 52, Array)
+#3 /var/www/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-08-14 16:03:50 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/cakephp/app/Controller/CurrencyAccountsController.php, line 52]
+2012-08-14 16:03:50 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /var/www/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 52)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 52, Array)
+#2 /var/www/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 52, Array)
+#3 /var/www/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-08-14 16:04:34 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/cakephp/app/Controller/CurrencyAccountsController.php, line 52]
+2012-08-14 16:04:34 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /var/www/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 52)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 52, Array)
+#2 /var/www/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 52, Array)
+#3 /var/www/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-08-14 16:20:36 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/cakephp/app/Controller/InvoicesController.php, line 51]
+2012-08-14 16:20:36 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /var/www/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cakeph...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cakeph...', 51, Array)
+#2 /var/www/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cakeph...', 51, Array)
+#3 /var/www/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-08-15 11:47:11 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/cakephp/app/Controller/PaymentPlansController.php, line 51]
+2012-08-15 11:47:11 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /var/www/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 51, Array)
+#2 /var/www/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 51, Array)
+#3 /var/www/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-08-15 11:47:19 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/cakephp/app/Controller/PaymentPlansController.php, line 51]
+2012-08-15 11:47:19 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /var/www/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 51, Array)
+#2 /var/www/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 51, Array)
+#3 /var/www/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

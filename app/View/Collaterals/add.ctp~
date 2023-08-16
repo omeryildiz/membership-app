@@ -1,0 +1,27 @@
+<div class="collaterals form">
+<?php echo $this->Form->create('Collateral'); ?>
+	<fieldset>
+		<legend><?php echo __('Add Collateral'); ?></legend>
+	<?php
+		echo $this->Form->input('collateral_type');
+		echo $this->Form->input('tracking_number');
+		echo $this->Form->input('collateral_number');
+		echo $this->Form->input('cheque');
+		echo $this->Form->input('warrant');
+		echo $this->Form->input('currency_account_id',array('empty'=>'void'));
+		echo $this->Form->input('bank_account_id');
+	?>
+	</fieldset>
+<?php echo $this->Form->end(__('Submit')); ?>
+</div>
+<div class="actions">
+	<h3><?php echo __('Actions'); ?></h3>
+	<ul>
+
+		<li><?php echo $this->Html->link(__('List Collaterals'), array('action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('List Currency Accounts'), array('controller' => 'currency_accounts', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Currency Account'), array('controller' => 'currency_accounts', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Bank Accounts'), array('controller' => 'bank_accounts', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Bank Account'), array('controller' => 'bank_accounts', 'action' => 'add')); ?> </li>
+	</ul>
+</div>
